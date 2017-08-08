@@ -1,0 +1,219 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+@font-face {
+  font-family: 'GOTHIC NORMAL';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../assets/fonts/GOTHIC.TTF');
+}
+
+@font-face {
+  font-family: 'GOTHIC BOLD';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../assets/fonts/GOTHICB.TTF');
+}
+
+@font-face {
+  font-family: 'Raleway Regular';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../assets/fonts/Raleway-Regular.ttf');
+}
+
+.vertical-mid-container {
+  display: -webkit-flex; /* Safari */
+  -webkit-justify-content: space-around; /* Safari 6.1+ */
+  display: flex!important;
+  justify-content: center;
+}
+
+.vertical-mid-inner {
+  align-self: center;
+}
+
+.margent-background{
+  background-color: $margent;
+}
+
+.green-background{
+  background-color: $bgreen;
+}
+
+.round-button{
+  border-radius:200px;
+}
+
+.margent{
+  color:$margent;
+}
+
+.logo-row{
+  margin-top:3vh;
+  margin-bottom:3vh;
+  margin-left:11px;
+  img{
+    width:80px;
+    height:80px;
+  }
+  h4{
+    margin-bottom:0;
+  }
+  p{
+    margin-top:3px;
+  }
+}
+
+
+
+.no-border{
+  border:none!important;
+}
+.no-margin-bottom{
+  margin-bottom:0!important;
+}
+
+.green-color{
+  color:$bgreen;
+}
+
+// page header bar
+ion-toolbar{
+  .toolbar-background{
+    background-color: #2bc2bd!important;
+  }
+  button{
+    color:$white!important;
+  }
+
+  ion-buttons{
+    order:3!important;
+    width:40px!important;
+    button{
+      width:100%!important;
+      padding:0!important;
+      margin:0!important;
+      img{
+        width:20px;
+      }
+    }
+  }
+  .toolbar-title{
+    color:$white;
+    font-family: "GOTHIC NORMAL";
+  }
+}
+
+// upload icon
+.upload-div{
+  position: absolute;
+  top:8vh;
+  right:0;
+
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  background-color: $margent;
+  color: $white;
+
+  height:32px;
+  width:10vw;
+
+  img{
+    width:5vw;
+  }
+}
+
+// page toolbar
+.tool-row{
+  background-color: $bgreen;
+  margin-bottom:4vh;
+  ion-col{
+    border-right:1px solid #2bc2bd;
+    padding-top:5px!important;
+    padding-bottom:5px!important;
+  }
+  img{
+    width:16px;
+  }
+
+  .mbadge{
+    background-color: $margent;
+    color:$white;
+    font-size:10px;
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    top:0px;
+    right:30%;
+    padding-top:2px;
+  }
+}
+
+// side menu
+.top-menu{
+  ion-toolbar{
+    background-color: #efefef!important;
+    .toolbar-background{
+      background-color: #efefef!important;
+    }
+
+    button{
+      color:$bgreen!important;
+    }
+    .toolbar-title{
+      color: $bgreen!important;
+      font-family: "GOTHIC NORMAL";
+    }
+
+    ion-buttons{
+      order:3!important;
+    }
+  }
+}
+
+// side menu list item
+.menu-list{
+  h4{
+    span.user-span{
+      color:$margent;
+      border-bottom:1px solid $margent;
+    }
+
+    span.driver-span{
+      border-bottom:1px solid $dblack;
+    }
+  }
+  .item{
+    border-bottom:0.55px solid #c8c7cc;
+    .item-inner{
+      border:none!important;
+    }
+  }
+  .log-btn{
+    background-color: $margent;
+    color:$white;
+    padding:8px 40px!important;
+    height:38px!important;
+    font-size:5vw!important;
+    border-radius: 200px;
+    margin-left:16px;
+    font-family: "GOTHIC NORMAL";
+  }
+}

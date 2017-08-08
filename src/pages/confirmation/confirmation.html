@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button menuToggle class="st">
+        <img src="assets/images/menu.png">
+      </button>
+    </ion-buttons>
+    <ion-title>Confirmation</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list class="header-list">
+    <h4 text-center>Flowers Dummy Text</h4>
+    <p text-center>123, Calie Chingon, San Diego, Ca 91910 </p>
+
+    <ion-row class="r-row vertical-mid-container">
+      <button ion-button class="r-btn" (click)="continue()">Continue</button>
+    </ion-row>
+
+    <div class="m-div" [ngStyle]="{ 'background-image': 'url(assets/images/menu1.png)'}">
+      <img src="assets/images/girl.png">
+    </div>
+  </ion-list>
+
+  <ion-list class="c-list">
+    <h4 text-center>ARRIVAL TIME 10MINS</h4>
+
+    <p text-center>You will be notified when you order is ready.</p>
+  </ion-list>
+
+  <ion-list>
+    <h4 text-center>Post your Experience:</h4>
+    <ion-textarea [(ngModel)]="exp"></ion-textarea>
+
+    <ion-row class="vertical-mid-container">
+      <div class="vertical-mid-inner social-row">
+        <img src="assets/images/facebook.png">
+        <img src="assets/images/twitter.png">
+        <img src="assets/images/google.png">
+        <img src="assets/images/mail.png">
+      </div>
+    </ion-row>
+  </ion-list>
+
+  <div class="upload-div vertical-mid-container">
+    <img src="assets/images/upload.png" class="vertical-mid-inner">
+  </div>
+
+</ion-content>

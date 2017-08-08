@@ -1,0 +1,123 @@
+page-profile{
+  ion-toolbar{
+    .toolbar-background{
+      background-color: #2bc2bd!important;
+    }
+    button{
+      color:$white!important;
+    }
+
+    ion-buttons{
+      order:3!important;
+      width:40px!important;
+      button{
+        width:100%!important;
+        padding:0!important;
+        margin:0!important;
+        img{
+          width:20px;
+        }
+      }
+    }
+    .toolbar-title{
+      color:$white;
+      font-family: "GOTHIC NORMAL";
+    }
+  }
+
+  h5,p,h4{
+    font-family: "GOTHIC NORMAL";
+  }
+
+  .tool-row{
+    background-color: $bgreen;
+    margin-bottom:0vh;
+    ion-col{
+      border-right:1px solid #2bc2bd;
+      padding-top:5px!important;
+      padding-bottom:5px!important;
+    }
+    img{
+      width:16px;
+    }
+
+    .mbadge{
+      background-color: $margent;
+      color:$white;
+      font-size:10px;
+      width:15px;
+      height:15px;
+      border-radius: 50%;
+      text-align: center;
+      position: absolute;
+      top:0px;
+      right:30%;
+      padding-top:2px;
+    }
+  }
+
+  .scroll-content{
+    background: url(../assets/images/bg.png);
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+  }
+
+  .m-row{
+    h5{
+      margin:5px 0 3px;
+    }
+    p{
+      margin:5px;
+      span{
+
+      }
+    }
+    img{
+      height:14px;
+      vertical-align: bottom;
+      margin-right:5px;
+    }
+
+    button{
+      border-radius: 200px;
+      height:28px;
+      font-size:3.5vw;
+      ion-icon{
+        margin-right:3px;
+      }
+    }
+  }
+
+  agm-map{
+    position: absolute;
+    bottom:0;
+    left:0;
+    height: 70vh!important;
+  }
+
+  .profile-div{
+    width:30vw;
+    height:30vw;
+    position: absolute;
+    top:45px;
+    left:15px;
+  }
+
+  .upload-div{
+    position: absolute;
+    top:8vh;
+    right:0;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    background-color: $margent;
+    color: $white;
+
+    height:32px;
+    width:10vw;
+
+    img{
+      width:5vw;
+    }
+  }
+}

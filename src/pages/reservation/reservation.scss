@@ -1,0 +1,173 @@
+page-reservation{
+
+  ion-toolbar{
+    .toolbar-background{
+      background-color: $bgreen!important;
+    }
+    button{
+      color:$white!important;
+    }
+
+    ion-buttons{
+      order:3!important;
+      width:40px!important;
+      button{
+        width:100%!important;
+        padding:0!important;
+        margin:0!important;
+        img{
+          width:20px;
+        }
+      }
+    }
+    .toolbar-title{
+      color:$white;
+    }
+  }
+
+  ion-segment{
+    width:60%;
+    margin-left:20%;
+    margin-top:2vh;
+    ion-segment-button{
+      border:none!important;
+      background-color: $white!important;
+      color: $dblack!important;
+      border-radius: 200px!important;
+    }
+
+    .first-segment{
+      margin-right:-3vw!important;
+    }
+
+    .last-segment{
+      margin-left:-3vw!important;
+    }
+
+    .segment-activated{
+      background-color: $margent!important;
+      color:$white!important;
+      z-index:10;
+    }
+
+  }
+
+  .scroll-content{
+    background: url(../assets/images/bg.png);
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+  }
+
+  ion-list{
+    margin-bottom:10px!important;
+  }
+
+  h5{
+    font-size:4vw;
+    font-family: "GOTHIC NORMAL";
+    color:$dblack;
+  }
+
+  div.des{
+    font-size:3.3vw;
+    font-family: "GOTHIC NORMAL";
+  }
+
+  .item{
+    bordoer:none!important;
+    background-color: transparent!important;
+
+    img{
+      width:24px;
+
+    }
+    .item-inner{
+      border-bottom:1px solid #ddd!important;
+      //margin-left:0!important;
+    }
+    ion-label{
+      color:$yblack;
+      font-family: "GOTHIC NORMAL";
+      font-size:3.4vw!important;
+    }
+  }
+
+  ion-list.s-list{
+    div.des{
+      margin-bottom:2vh;
+    }
+  }
+
+  .btn-item{
+    border:none!important;
+    .item-inner{
+      border:none!important;
+
+    }
+
+  }
+
+  p{
+    color:$bgreen;
+    font-size:3.3vw;
+    font-family: "GOTHIC NORMAL";
+  }
+
+  ion-row{
+    padding-top:3px;
+    padding-bottom:3px;
+    ion-col{
+      font-size:3.3vw;
+      font-family: "GOTHIC NORMAL";
+    }
+  }
+  ion-row.f-row{
+    margin-top:3vh;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+  }
+
+  ion-row.s-row{
+    border-bottom:1px solid #ddd;
+  }
+
+  button{
+    color:$white;
+    padding:8px 40px!important;
+    height:38px!important;
+    font-size:5vw!important;
+    margin-left:16px;
+    font-family: "GOTHIC NORMAL";
+  }
+
+  .upload-div{
+    position: absolute;
+    top:10vh;
+    right:0;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    background-color: $margent;
+    color: $white;
+
+    height:32px;
+    width:10vw;
+
+    img{
+      width:5vw;
+    }
+  }
+
+  .bottom-div{
+    position: absolute;
+    bottom:10px;
+    left:10px;
+    width:calc(100% - 20px);
+    height:12vh;
+    background: url(../assets/images/adver.png);
+    span{
+      font-size:5vw;
+      font-family: "GOTHIC BOLD";
+    }
+  }
+}

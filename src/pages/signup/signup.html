@@ -1,0 +1,64 @@
+<ion-content padding>
+  <ion-list>
+    <ion-row class="vertical-mid-container">
+      <img src="assets/images/logo.png" class="logo vertical-mid-inner">
+    </ion-row>
+
+
+    <ion-item>
+      <ion-icon item-left>
+        <img src="assets/images/person.png">
+      </ion-icon>
+      <!--<ion-label>Full Name</ion-label>-->
+      <ion-input placeholder="Full Name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon item-left>
+        <img src="assets/images/call.png">
+      </ion-icon>
+      <!--<ion-label>Phone</ion-label>-->
+      <ion-input placeholder="Phone"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon item-left>
+        <img src="assets/images/pin.png">
+      </ion-icon>
+      <!--<ion-label>Zipcode</ion-label>-->
+      <ion-input placeholder="Zipcode"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon item-left>
+        <img src="assets/images/lock.png">
+      </ion-icon>
+      <!--<ion-label>New Password</ion-label>-->
+      <ion-input placeholder="New Password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon item-left>
+        <img src="assets/images/lock.png">
+      </ion-icon>
+      <!--<ion-label>Confirm Password</ion-label>-->
+      <ion-input placeholder="Confirm Password"></ion-input>
+    </ion-item>
+
+    <ion-item class="vertical-mid-container btn-item">
+      <button ion-button full (click)="signup()" class="margent-background vertical-mid-inner round-button">Sign up</button>
+    </ion-item>
+
+    <h5 text-center>Already have an account, <span (click)="sign()" class="margent">Signin</span></h5>
+
+    <h4 text-center>Or Login with</h4>
+    <ion-row class="vertical-mid-container">
+      <div class="vertical-mid-inner social-row">
+        <img src="assets/images/facebook.png">
+        <img src="assets/images/twitter.png">
+        <img src="assets/images/google.png">
+        <img src="assets/images/mail.png">
+      </div>
+    </ion-row>
+  </ion-list>
+</ion-content>

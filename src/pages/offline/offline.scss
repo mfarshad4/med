@@ -1,0 +1,75 @@
+page-offline{
+  .scroll-content{
+    background: url(../assets/images/bg.png);
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+  }
+
+  h4,h5,p{
+    font-family: "GOTHIC NORMAL";
+  }
+
+  .tool-row{
+    margin-bottom:0;
+  }
+
+  agm-map{
+    height:calc(100% - 30px)!important;
+  }
+
+  .show-div{
+    position: absolute;
+    bottom:10px;
+    width:90%;
+    left:5%;
+
+    ion-list{
+      background-color: $white;
+      padding-bottom:5px;
+      margin-bottom:10px;
+      h4{
+        margin:5px;
+        font-size:5vw;
+      }
+      h5{
+        margin:5px;
+        font-size:4vw;
+      }
+      p{
+        margin:0;
+      }
+      ion-item{
+        background-color: transparent;
+        border:none!important;
+        height:30px;
+        padding:0;
+        border-bottom:1px solid #ddd!important;
+        .item-inner{
+          border:none!important;
+        }
+
+        h4{
+
+          font-size:3.5vw;
+        }
+      }
+    }
+  }
+
+  .s-div{
+    position: absolute;
+    top:8vh;
+    right:2vw;
+    height:16px;
+    width:28px;
+    img{
+      width:100%;
+    }
+  }
+
+  .upload-div {
+    top: 12vh;
+    width:40px;
+  }
+}

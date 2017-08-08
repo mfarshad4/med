@@ -1,0 +1,41 @@
+page-providers{
+
+  .scroll-content{
+    padding-top:5vh!important;
+    background: url(../assets/images/bg.png);
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+  }
+
+  h4{
+    font-size:6vw;
+    margin-bottom:7vh!important;
+    margin-top:0vh!important;
+    font-family: "GOTHIC BOLD";
+  }
+
+  ion-row{
+    margin-top:3vh;
+    img{
+      width:28vw;
+      height:28vw;
+    }
+
+  }
+
+  h5{
+    margin-top:5px!important;
+    margin-bottom:0!important;
+    font-family: "GOTHIC NORMAL";
+    font-size: 4vw;
+  }
+
+  p{
+    position: absolute;
+    bottom:20px;
+    color:$yblack;
+    font-size:3.5vw;
+    width:100%;
+  }
+}

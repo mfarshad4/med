@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button menuToggle class="st">
+        <img src="assets/images/menu.png">
+      </button>
+    </ion-buttons>
+    <ion-title>Online</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-row class="tool-row">
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/bell.png" class="vertical-mid-inner">
+      <div class="mbadge">18</div>
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/cart.png" class="vertical-mid-inner">
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/cup.png" class="vertical-mid-inner">
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/heart.png" class="vertical-mid-inner">
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/usd.png" class="vertical-mid-inner">
+    </ion-col>
+  </ion-row>
+
+  <div class="img-div" [ngStyle]="{ 'background-image': 'url(assets/images/favorite.png)'}">
+    <ion-row>
+      <ion-col>
+        <img src="assets/images/favorite1.png">
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button class="edit-btn">
+          <ion-icon name="ios-create"></ion-icon>
+          Edit
+        </button>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <ion-row class="img-row">
+    <ion-col col-2 class="vertical-mid-container">
+      <img src="assets/images/f5.png" class="f3 vertical-mid-inner">
+    </ion-col>
+    <ion-col col-2 class="vertical-mid-container">
+      <img src="assets/images/f2.png" class="f2 vertical-mid-inner">
+    </ion-col>
+    <ion-col col-4 class="vertical-mid-container">
+      <img src="assets/images/f1.png" class="f1 vertical-mid-inner">
+    </ion-col>
+    <ion-col col-2 class="vertical-mid-container">
+      <img src="assets/images/f4.png" class="f2 vertical-mid-inner">
+    </ion-col>
+    <ion-col col-2 class="vertical-mid-container">
+      <img src="assets/images/f3.png" class="f3 vertical-mid-inner">
+    </ion-col>
+  </ion-row>
+
+  <div class="bottom-div vertical-mid-container">
+    <span class="vertical-mid-inner">ADVERTISEMENT</span>
+  </div>
+</ion-content>

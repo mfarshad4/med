@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button menuToggle class="st">
+        <img src="assets/images/menu.png">
+      </button>
+    </ion-buttons>
+    <ion-title>Online</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-row class="tool-row">
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/bell.png" class="vertical-mid-inner">
+      <div class="mbadge">18</div>
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/cart.png" class="vertical-mid-inner">
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/cup.png" class="vertical-mid-inner">
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/heart.png" class="vertical-mid-inner">
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/usd.png" class="vertical-mid-inner">
+    </ion-col>
+  </ion-row>
+
+  <ion-segment [(ngModel)]="sinfo">
+    <ion-segment-button value="a" class="first-segment">
+      Following
+    </ion-segment-button>
+    <ion-segment-button value="b" class="last-segment">
+      You
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-list>
+    <ion-item>
+      <img src="assets/images/man.png" item-left>
+      <h5>Jackie Draver</h5>
+    </ion-item>
+    <img src="assets/images/online.png" class="banner-img">
+    <ion-row class="img-row">
+      <img src="assets/images/red-heart.png">
+      <img src="assets/images/chat.png">
+      <img src="assets/images/r-arrow.png">
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-auto>
+        <ion-row>
+          <img src="assets/images/eye.png">
+          <span>1563 Views</span>
+
+          <img src="assets/images/black-heart.png">
+          <span><i>1026 Likes</i></span>
+        </ion-row>
+      </ion-col>
+
+      <ion-col text-right>
+        <span><i>4 mins ago</i></span>
+      </ion-col>
+    </ion-row>
+
+    <p>
+      Drake Korner hey Jackie what a great Lorem ipsum dolor
+      sit amet consectetur adipiscing elit.
+    </p>
+
+    <p class="green-color">
+      <i>View all 35 comments</i>
+    </p>
+  </ion-list>
+
+  <div class="upload-div vertical-mid-container">
+    <img src="assets/images/upload.png" class="vertical-mid-inner">
+  </div>
+</ion-content>

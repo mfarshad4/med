@@ -1,0 +1,109 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button menuToggle class="st">
+        <img src="assets/images/menu.png">
+      </button>
+    </ion-buttons>
+    <!--<button ion-button menuToggle>-->
+      <!--<ion-icon>-->
+        <!--<img src="assets/images/menu.png">-->
+      <!--</ion-icon>-->
+    <!--</button>-->
+    <ion-title>Reservations</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <img src="assets/images/banner.png" class="banner-img">
+    <ion-segment [(ngModel)]="sinfo">
+      <ion-segment-button value="a" class="first-segment">
+        Schedule
+      </ion-segment-button>
+      <ion-segment-button value="b" class="last-segment">
+        Info
+      </ion-segment-button>
+    </ion-segment>
+  </ion-list>
+
+  <div [ngSwitch]="sinfo" padding>
+    <ion-list *ngSwitchCase="'a'" class="s-list">
+      <h5>Schedule an Appointment</h5>
+
+      <div class="des">
+        As soon as we receive your information, we’ll get in touch with you as soon as possible to confirm as appointment time.
+      </div>
+
+      <ion-item>
+        <ion-label>Full Name</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Email</ion-label>
+        <ion-input type="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Phone</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Preferred Date</ion-label>
+        <ion-datetime>
+
+        </ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Preferred Time</ion-label>
+        <ion-datetime>
+
+        </ion-datetime>
+      </ion-item>
+
+      <ion-item class="vertical-mid-container btn-item">
+        <button ion-button full (click)="verification()" class="margent-background vertical-mid-inner round-button">Request an Appointment</button>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'b'">
+      <h5>Book your Reservation TODAY</h5>
+
+      <p>123, Calle Chingon, San Diego, Ca 91910</p>
+
+      <div class="des">
+        Get your recommendations from the comfort of your own home!
+      </div>
+
+      <ion-row class="f-row">
+        <ion-col col-5>
+          Sunday - Friday
+        </ion-col>
+        <ion-col col-7>
+          6:00 AM - 11:00 PM
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="s-row">
+        <ion-col col-5>
+          Saturday
+        </ion-col>
+        <ion-col col-7>
+          6:00 AM - 10:30 PM
+        </ion-col>
+      </ion-row>
+
+
+    </ion-list>
+  </div>
+
+  <div *ngIf="sinfo=='b'" class="bottom-div vertical-mid-container">
+    <span class="vertical-mid-inner">ADVERTISEMENT</span>
+  </div>
+
+  <div class="upload-div vertical-mid-container">
+    <img src="assets/images/upload.png" class="vertical-mid-inner">
+  </div>
+</ion-content>

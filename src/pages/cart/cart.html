@@ -1,0 +1,140 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button menuToggle class="st">
+        <img src="assets/images/menu.png">
+      </button>
+    </ion-buttons>
+    <ion-title>Cart</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-row class="header-row">
+      <ion-col col-1>
+
+      </ion-col>
+      <ion-col col-5>
+        ITEMS
+      </ion-col>
+      <ion-col col-3>
+        QUANTITY
+      </ion-col>
+      <ion-col col-3>
+        PRICE
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="t-row" *ngFor="let item of items;let i=index;">
+      <ion-col col-1 text-center>
+        <ion-icon name="ios-trash-outline"></ion-icon>
+      </ion-col>
+      <ion-col col-5>
+        {{item.title}}
+      </ion-col>
+      <ion-col col-3>
+        <ion-row>
+          <div class="op-div vertical-mid-container" (click)="remove(i)">
+            <ion-icon name="ios-remove" class="vertical-mid-inner">
+
+            </ion-icon>
+          </div>
+          <div class="in-div vertical-mid-container">
+            <ion-input type="number" class="vertical-mid-inner" [(ngModel)]="item.amount"></ion-input>
+          </div>
+          <div class="op-div vertical-mid-container" (click)="add(i)">
+            <ion-icon name="ios-add" class="vertical-mid-inner">
+
+            </ion-icon>
+          </div>
+        </ion-row>
+      </ion-col>
+      <ion-col col-3>
+        ${{item.mprice | number : '1.2-2'}}
+      </ion-col>
+    </ion-row>
+  </ion-list>
+
+  <ion-list>
+    <ion-row class="t-row no-border no-margin-bottom">
+      <ion-col col-6 text-right class="col-7">
+        Coins:
+      </ion-col>
+      <ion-col col-3>
+        <ion-row>
+          <div class="op-div vertical-mid-container" (click)="remove_coin()">
+            <ion-icon name="ios-remove" class="vertical-mid-inner">
+
+            </ion-icon>
+          </div>
+          <div class="in-div vertical-mid-container">
+            <ion-input type="number" class="vertical-mid-inner" [(ngModel)]="coin.amount"></ion-input>
+          </div>
+          <div class="op-div vertical-mid-container" (click)="add_coin()">
+            <ion-icon name="ios-add" class="vertical-mid-inner">
+
+            </ion-icon>
+          </div>
+        </ion-row>
+      </ion-col>
+      <ion-col col-3>
+        <span>89</span>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="t-row no-border no-margin-bottom">
+      <ion-col col-6 text-right class="col-7">
+        Gratuity:
+      </ion-col>
+      <ion-col col-3>
+        <ion-row>
+          <div class="op-div vertical-mid-container" (click)="remove_quan()">
+            <ion-icon name="ios-remove" class="vertical-mid-inner">
+
+            </ion-icon>
+          </div>
+          <div class="in-div vertical-mid-container">
+            <ion-input type="number" class="vertical-mid-inner" [(ngModel)]="quan.amount"></ion-input>
+          </div>
+          <div class="op-div vertical-mid-container" (click)="add_quan()">
+            <ion-icon name="ios-add" class="vertical-mid-inner">
+
+            </ion-icon>
+          </div>
+        </ion-row>
+      </ion-col>
+      <ion-col col-3>
+        <span>$2.00</span>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="t-row">
+      <ion-col col-6 text-right class="col-7">
+        Total Amount:
+      </ion-col>
+      <ion-col col-3>
+      </ion-col>
+      <ion-col col-3>
+        <span class="green-color">$15.17</span>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="btn-row">
+      <ion-col col-5 text-right>
+        <button ion-button class="g-btn">Delivery</button>
+      </ion-col>
+      <ion-col col-2 text-center class="vertical-mid-container">
+        <span class="vertical-mid-inner">OR</span>
+      </ion-col>
+      <ion-col col-5>
+        <button ion-button class="g-btn">Pick up</button>
+      </ion-col>
+    </ion-row>
+
+    <p text-center><span>Add Promo Code</span></p>
+
+    <ion-row class="r-row vertical-mid-container">
+      <button ion-button class="r-btn" (click)="go_checkout()">Checkout</button>
+    </ion-row>
+  </ion-list>
+</ion-content>

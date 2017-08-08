@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button icon-only class="st" (click)="back()">
+        <ion-icon name="ios-arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Payment Method</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h4 text-center>Choose a Payment Method</h4>
+  <ion-list radio-group [(ngModel)]="pmethod" class="md">
+
+    <ion-row>
+      <ion-col col-2 class="vertical-mid-container">
+        <ion-radio class="vertical-mid-inner" value="a" mode="md"></ion-radio>
+      </ion-col>
+      <ion-col col-10>
+        <p>Credit Card</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-2 class="vertical-mid-container">
+        <ion-radio class="vertical-mid-inner" value="b" mode="md"></ion-radio>
+      </ion-col>
+      <ion-col col-10>
+        <p>Debit Card</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-2 class="vertical-mid-container">
+        <ion-radio class="vertical-mid-inner" value="c" mode="md"></ion-radio>
+      </ion-col>
+      <ion-col col-10>
+        <p>CASH MONEY BABY!</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="r-row vertical-mid-container">
+      <button ion-button class="r-btn" (click)="continue()">Continue</button>
+    </ion-row>
+
+    <p text-center>or <span>Cancel</span></p>
+  </ion-list>
+
+  <div class="upload-div vertical-mid-container">
+    <img src="assets/images/upload.png" class="vertical-mid-inner">
+  </div>
+
+  <div class="bottom-div vertical-mid-container">
+    <span class="vertical-mid-inner">ADVERTISEMENT</span>
+  </div>
+</ion-content>

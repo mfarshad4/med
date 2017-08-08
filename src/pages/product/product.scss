@@ -1,0 +1,114 @@
+page-product{
+  ion-toolbar{
+    .toolbar-background{
+      background-color: #2bc2bd!important;
+    }
+    button{
+      color:$white!important;
+    }
+
+    ion-buttons{
+      order:3!important;
+      width:40px!important;
+      button{
+        width:100%!important;
+        padding:0!important;
+        margin:0!important;
+        img{
+          width:20px;
+        }
+      }
+    }
+    .toolbar-title{
+      color:$white;
+      font-family: "GOTHIC NORMAL";
+    }
+  }
+
+  .scroll-content{
+    background: url(../assets/images/bg.png);
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+  }
+
+  .banner-img{
+    width:100%;
+    height:30vh;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+  }
+
+  .scroll-row{
+    width:100%;
+    height:44px;
+    margin-top:-5px;
+
+    .img-scroll{
+      height:100%;
+      .scroll-content{
+        margin-top:0!important;
+      }
+
+      ion-row{
+        flex-wrap: nowrap;
+      }
+
+      ion-col{
+        background-color: #ececec;
+        height:44px;
+        padding:5px 10px;
+
+        display: block;
+
+        border-right: 1px solid #ddd;
+
+        p{
+          margin:0;
+          font-size:3vw;
+          font-family: "GOTHIC NORMAL";
+        }
+
+        h5{
+          margin:0;
+          font-size:3.5vw;
+          font-family: "GOTHIC NORMAL";
+        }
+      }
+    }
+  }
+
+  ion-list{
+    padding:10px;
+
+    div{
+      font-family: "GOTHIC NORMAL";
+      margin-bottom:20px;
+    }
+
+    h4{
+      margin-top:10px;
+      font-family: "GOTHIC NORMAL";
+      font-size: 4.6vw;
+    }
+
+    ion-textarea{
+      width:100%;
+      border: 1px solid #e8e8e8;
+      background-color: $white;
+      padding:5px;
+    }
+
+    .req-btn{
+      padding:4px 30px;
+      border-radius: 200px;
+      margin-top:20px;
+      font-size: 5vw;
+      height: 40px;
+      font-family: "GOTHIC NORMAL";
+    }
+  }
+
+
+}

@@ -1,0 +1,123 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button menuToggle class="st">
+        <img src="assets/images/menu.png">
+      </button>
+    </ion-buttons>
+    <ion-title>Categories</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-row class="tool-row">
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/bell.png" class="vertical-mid-inner">
+      <div class="mbadge">18</div>
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/cart.png" class="vertical-mid-inner">
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/cup.png" class="vertical-mid-inner">
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/heart.png" class="vertical-mid-inner">
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/usd.png" class="vertical-mid-inner">
+    </ion-col>
+  </ion-row>
+  <img src="assets/images/banner.png" class="banner-img" (click)="show_store()">
+
+  <ion-list>
+    <ion-segment [(ngModel)]="sinfo">
+      <ion-segment-button value="a" class="first-segment">
+        Delivery
+      </ion-segment-button>
+      <ion-segment-button value="b" class="center-segment">
+        Storefronts
+      </ion-segment-button>
+      <ion-segment-button value="c" class="last-segment">
+        Doctors
+      </ion-segment-button>
+    </ion-segment>
+  </ion-list>
+
+  <ion-list class="fitem-list">
+    <button ion-item detail-none (click)="show_detail($event)">
+      <ion-icon item-left>
+        <img src="assets/images/cat-icon.png">
+      </ion-icon>
+      <h4>Appetizers</h4>
+    </button>
+
+    <button ion-item detail-none (click)="show_detail()">
+      <ion-icon item-left>
+        <img src="assets/images/cat-icon.png">
+      </ion-icon>
+      <h4>Salads & Wraps</h4>
+    </button>
+
+    <button ion-item detail-none (click)="show_detail()">
+      <ion-icon item-left>
+        <img src="assets/images/cat-icon.png">
+      </ion-icon>
+      <h4>Beverages</h4>
+    </button>
+
+    <button ion-item detail-none (click)="show_detail()">
+      <ion-icon item-left>
+        <img src="assets/images/cat-icon.png">
+      </ion-icon>
+      <h4>Venue Special</h4>
+    </button>
+
+    <button ion-item detail-none (click)="show_detail()">
+      <ion-icon item-left>
+        <img src="assets/images/cat-icon.png">
+      </ion-icon>
+      <h4>Appetizers</h4>
+    </button>
+
+    <button ion-item detail-none (click)="show_detail()">
+      <ion-icon item-left>
+        <img src="assets/images/cat-icon.png">
+      </ion-icon>
+      <h4>Salads & Wraps</h4>
+    </button>
+
+    <button ion-item detail-none (click)="show_detail()">
+      <ion-icon item-left>
+        <img src="assets/images/cat-icon.png">
+      </ion-icon>
+      <h4>Beverages</h4>
+    </button>
+
+    <button ion-item detail-none (click)="show_detail()">
+      <ion-icon item-left>
+        <img src="assets/images/cat-icon.png">
+      </ion-icon>
+      <h4>Venue Special</h4>
+    </button>
+  </ion-list>
+
+  <p>
+    <span>
+      Reviews / 55
+    </span>
+
+    <button ion-button class="rate-btn" (click)="show_rating()">
+      <ion-icon name="ios-star"></ion-icon>
+      Rate
+    </button>
+  </p>
+
+  <div class="bottom-div vertical-mid-container">
+    <span class="vertical-mid-inner">ADVERTISEMENT</span>
+  </div>
+
+</ion-content>

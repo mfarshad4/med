@@ -1,0 +1,124 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button menuToggle class="st">
+        <img src="assets/images/menu.png">
+      </button>
+    </ion-buttons>
+    <ion-title>On-Demand</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-row class="tool-row">
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/bell.png" class="vertical-mid-inner">
+      <div class="mbadge">18</div>
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/cart.png" class="vertical-mid-inner">
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/cup.png" class="vertical-mid-inner">
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/heart.png" class="vertical-mid-inner">
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/usd.png" class="vertical-mid-inner">
+    </ion-col>
+  </ion-row>
+
+  <ion-list>
+    <ion-segment [(ngModel)]="sinfo">
+      <ion-segment-button value="a" class="first-segment">
+        Drivers
+      </ion-segment-button>
+      <ion-segment-button value="b" class="last-segment">
+        Listings
+      </ion-segment-button>
+    </ion-segment>
+
+    <div class="bb-row">
+
+      <button ion-button class="girl-btn green-background">
+        <img src="assets/images/girl.png">
+      </button>
+
+      <button ion-button class="setting-btn green-background">
+        <img src="assets/images/setting.png">
+      </button>
+
+      <button ion-button class="refresh-btn margent-background">
+        <ion-icon name="refresh"></ion-icon>
+        Refresh
+      </button>
+
+      <button ion-button class="msg-btn green-background">
+        <img src="assets/images/callmsg.png">
+      </button>
+
+      <button ion-button class="msg-btn green-background">
+        <img src="assets/images/msg.png">
+      </button>
+
+    </div>
+
+
+  </ion-list>
+
+  <agm-map style="width: 100%; height: 350px;"
+           [latitude]="origin.lat"
+           [longitude]="origin.lng"
+           [zoom]="zoom"
+           [streetViewControl]="false"
+  >
+
+    <!--[label]="m.label" -->
+    <agm-marker
+      *ngFor="let m of markers"
+      [latitude]="m.lat"
+      [longitude]="m.lng"
+
+      [iconUrl]="m.iconUrl">
+
+      <agm-info-window *ngIf="!type">
+        <p>123, Calle Chingon,San Diego, Ca 91910</p>
+        <rating
+                readOnly="false"
+        max="5"
+        emptyStarIconName="star-outline"
+        halfStarIconName="star-half"
+        starIconName="star"
+        nullable="false"
+        > <!--use it when you need to do something when user clicks on a star. in case you only need to change ngModel property, this property can be ommited.-->
+        </rating>
+        <ion-row>
+          <button ion-button class="margent-background">
+            <ion-icon name="ios-star"></ion-icon>
+            Rate
+          </button>
+        </ion-row>
+      </agm-info-window>
+    </agm-marker>
+
+  </agm-map>
+
+  <div class="upload-div vertical-mid-container" (click)="show_alert()">
+    <img src="assets/images/upload.png" class="vertical-mid-inner">
+  </div>
+
+  <div class="bottom-div vertical-mid-container">
+    <button ion-button class="med-btn">Med Connex</button>
+
+    <button ion-button class="suit-btn">
+      <ion-icon>
+        <img src="assets/images/usdcase.png">
+      </ion-icon>
+      $310
+    </button>
+  </div>
+</ion-content>

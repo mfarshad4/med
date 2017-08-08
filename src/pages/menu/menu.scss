@@ -1,0 +1,160 @@
+page-menu{
+  ion-toolbar{
+    .toolbar-background{
+      background-color: #2bc2bd!important;
+    }
+    button{
+      color:$white!important;
+    }
+
+    ion-buttons{
+      order:3!important;
+      width:40px!important;
+      button{
+        width:100%!important;
+        padding:0!important;
+        margin:0!important;
+        img{
+          width:20px;
+        }
+      }
+    }
+    .toolbar-title{
+      color:$white;
+      font-family: "GOTHIC NORMAL";
+    }
+  }
+
+  .scroll-content{
+    background: url(../assets/images/bg.png);
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+  }
+
+  .tool-row{
+    background-color: $bgreen;
+    margin-bottom:0vh;
+    ion-col{
+      border-right:1px solid #2bc2bd;
+      padding-top:5px!important;
+      padding-bottom:5px!important;
+    }
+    img{
+      width:16px;
+    }
+
+    .mbadge{
+      background-color: $margent;
+      color:$white;
+      font-size:10px;
+      width:15px;
+      height:15px;
+      border-radius: 50%;
+      text-align: center;
+      position: absolute;
+      top:0px;
+      right:30%;
+      padding-top:2px;
+    }
+  }
+
+  .subtool-row{
+    ion-col{
+      padding:10px 0 0;
+      height: 40px;
+    }
+    span{
+      padding:5px 10px 10px;
+    }
+  }
+
+  .scroll-row{
+    width:100%;
+    height:44px;
+
+    .img-scroll{
+      height:100%;
+      .scroll-content{
+        margin-top:0!important;
+      }
+
+      ion-row{
+        flex-wrap: nowrap;
+      }
+
+      ion-col{
+        background-color: #ececec;
+        height:44px;
+        padding:10px 10px;
+
+        border-right: 1px solid #ddd;
+      }
+    }
+  }
+
+
+
+  .store-list{
+    .img-div{
+      width:100%;
+      height:30vh;
+      background-position: 50% 50%;
+      background-repeat:   no-repeat;
+      background-size:     cover;
+    }
+
+    h5{
+      background-color: $white;
+      margin:0;
+      padding:10px 5px;
+      border-bottom:1px solid #ececec;
+      font-size:4vw;
+      font-family: "GOTHIC NORMAL";
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    ion-row.b-row{
+      padding-top:10px;
+      padding-bottom:5px;
+      background-color: $white;
+      ion-col{
+        padding-top:0;
+        padding-bottom:0;
+      }
+      img{
+        width:16px!important;
+        margin-right:5px;
+      }
+      span{
+        color:#2bc2bd;
+        font-family: "GOTHIC NORMAL";
+      }
+    }
+  }
+
+  .active{
+    color:#2bc2bd;
+    border-bottom:1px solid #2bc2bd;
+  }
+
+  .upload-div{
+    position: absolute;
+    top:8vh;
+    right:0;
+
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    background-color: $margent;
+    color: $white;
+
+    height:32px;
+    width:10vw;
+
+    img{
+      width:5vw;
+    }
+  }
+}

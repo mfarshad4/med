@@ -1,0 +1,75 @@
+page-signup{
+
+  .scroll-content{
+    padding-top:6vh!important;
+    background: url(../assets/images/bg.png);
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+  }
+
+  .logo{
+    width:40vw;
+    margin-bottom:3vh;
+  }
+
+  ion-item{
+    bordoer:none!important;
+
+    background-color: transparent!important;
+    img{
+      width:24px;
+
+    }
+    .item-inner{
+      border-bottom:1px solid $border!important;
+      margin-left:0!important;
+    }
+    ion-label{
+      color:$yblack;
+      font-family: "GOTHIC NORMAL";
+    }
+  }
+
+  .btn-item{
+    .item-inner{
+      border:none!important;
+
+    }
+
+  }
+
+  button{
+    color:$white;
+    padding:8px 40px!important;
+    height:38px!important;
+    font-size:6vw!important;
+    margin-left:16px;
+    font-family: "GOTHIC NORMAL";
+  }
+
+  h5{
+    font-size:3.3vw;
+    font-family: "Raleway Regular";
+    margin-top:5px!important;
+    span{
+      border-bottom:1px solid $yblack;
+    }
+    span.margent{
+      border-bottom:1px solid $margent;
+    }
+  }
+
+
+  h4{
+    font-size:4vw;
+    font-family: "GOTHIC NORMAL";
+    margin-top:2vh!important;
+  }
+
+  .social-row{
+    img{
+      width:9vw;
+    }
+  }
+}

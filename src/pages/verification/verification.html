@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button menuToggle class="st">
+        <img src="assets/images/menu.png">
+      </button>
+    </ion-buttons>
+    <ion-title>Verification</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-row class="tool-row">
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/bell.png" class="vertical-mid-inner">
+      <div class="mbadge">18</div>
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/cart.png" class="vertical-mid-inner">
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/cup.png" class="vertical-mid-inner">
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/heart.png" class="vertical-mid-inner">
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/usd.png" class="vertical-mid-inner">
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="lat-row vertical-mid-container">
+    <div class="vertical-mid-inner">
+      <ion-row class="vertical-mid-container">
+        <img src="assets/images/lat.png" class="vertical-mid-inner">
+      </ion-row>
+      <h5 text-center>Upload Prescription</h5>
+    </div>
+  </ion-row>
+
+  <ion-row class="vertical-mid-container button-row">
+    <div class="btn-row vertical-mid-inner">
+      <button ion-button class="margent-background" (click)="demand()">State ID</button>
+      <button ion-button class="green-background">Prescription</button>
+    </div>
+  </ion-row>
+
+  <ion-row class="lat-row vertical-mid-container">
+    <div class="vertical-mid-inner">
+      <ion-row class="vertical-mid-container">
+        <img src="assets/images/lat.png" class="vertical-mid-inner">
+      </ion-row>
+      <h5 text-center>Upload Prescription</h5>
+    </div>
+  </ion-row>
+
+  <h5 text-center class="green">
+    "Must be 18 to ENTER"
+  </h5>
+
+  <p text-center><span>Skip</span></p>
+
+  <div class="bottom-div vertical-mid-container">
+    <span class="vertical-mid-inner">ADVERTISEMENT</span>
+  </div>
+
+  <div class="upload-div vertical-mid-container" (click)="show_alert()">
+    <img src="assets/images/upload.png" class="vertical-mid-inner">
+  </div>
+</ion-content>

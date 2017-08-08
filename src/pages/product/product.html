@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button menuToggle class="st">
+        <img src="assets/images/menu.png">
+      </button>
+    </ion-buttons>
+    <ion-title>Product Info</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <img src="assets/images/product.png" class="banner-img">
+  <div class="scroll-row">
+    <ion-scroll #imgscroll scrollX="true" scrollY="false"  class="img-scroll">
+      <ion-row>
+        <ion-col col-auto>
+          <p>1G</p>
+          <h5>15.00</h5>
+        </ion-col>
+        <ion-col col-auto>
+          <p>2G</p>
+          <h5>25.00</h5>
+        </ion-col>
+        <ion-col col-auto>
+          <p><span>4G</span> 1/8</p>
+          <h5>50.00</h5>
+        </ion-col>
+        <ion-col col-auto>
+          <p>1/4</p>
+          <h5>85.00</h5>
+        </ion-col>
+        <ion-col col-auto>
+          <p>1/2</p>
+          <h5>150.00</h5>
+        </ion-col>
+        <ion-col col-auto>
+          <p>OZ</p>
+          <h5>295.00</h5>
+        </ion-col>
+        <ion-col col-auto>
+          <p>1G</p>
+          <h5>15.00</h5>
+        </ion-col>
+        <ion-col col-auto>
+          <p>1G</p>
+          <h5>15.00</h5>
+        </ion-col>
+
+      </ion-row>
+    </ion-scroll>
+  </div>
+
+  <ion-list>
+    <h4>Farm House Pizza</h4>
+
+    <div class="des">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in nisi nisi. Nam ut feugiat diam. Maecenas neque metus, dictum sed condimentum dignissim, convallis non turpis. Cras non sem ullamcorper, porta tellus vitae, inter dum quam. Suspendisse nec lectus.
+    </div>
+
+    <h4 text-center>Special Request</h4>
+    <ion-textarea>
+      I need extra cheese, onions, corns. No asparagus n shif and all ...
+    </ion-textarea>
+
+    <ion-row class="vertical-mid-container">
+      <button ion-button (click)="show_dialog()" class="margent-background vertical-mid-inner req-btn">Request</button>
+    </ion-row>
+  </ion-list>
+</ion-content>

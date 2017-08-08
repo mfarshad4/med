@@ -1,0 +1,44 @@
+page-terms{
+  .scroll-content{
+    padding-top:10vh!important;
+    background: url(../assets/images/bg.png);
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+  }
+  ion-list{
+
+  }
+  h4{
+    font-family: "GOTHIC NORMAL";
+    font-size:6vw;
+    color:$dblack;
+
+  }
+
+  h5{
+    font-family: "GOTHIC NORMAL";
+    font-size:4vw;
+    color:$dblack;
+    margin-top:5vh;
+  }
+
+  div{
+    font-family: "GOTHIC NORMAL";
+    font-size:3.3vw;
+    color:$yblack;
+  }
+
+  button{
+    color:$white;
+    padding:5px 40px!important;
+    height:36px!important;
+    font-size:6vw;
+  }
+
+  ion-row{
+    margin-top:4.4vh;
+
+
+  }
+}

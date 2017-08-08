@@ -1,0 +1,82 @@
+page-online{
+
+  *{
+    font-family: "GOTHIC NORMAL";
+  }
+
+  .scroll-content{
+    background: url(../assets/images/bg.png);
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+
+  }
+
+  ion-segment{
+    width:60%;
+    margin-left:20%;
+    margin-top:4vh!important;
+    margin-bottom:4vh!important;
+    ion-segment-button{
+      border:none!important;
+      background-color: $white!important;
+      color: $dblack!important;
+      border-radius: 200px!important;
+    }
+
+    .first-segment{
+      margin-right:-3vw!important;
+    }
+
+    .last-segment{
+      margin-left:-3vw!important;
+    }
+
+    .segment-activated{
+      background-color: $margent!important;
+      color:$white!important;
+      z-index:10;
+    }
+
+  }
+
+  ion-list{
+    padding:5px;
+    ion-item{
+      background-color: transparent!important;
+      border:none!important;
+      padding:0!important;
+      img{
+        width:30px;
+      }
+    }
+  }
+
+  ion-row{
+    ion-col{
+      padding-top:10px;
+      img{
+        width:16px;
+        height:12px;
+        vertical-align: bottom;
+        margin-right:5px;
+        margin-top:2px;
+      }
+      span{
+        margin-right:10px;
+      }
+    }
+  }
+
+  .img-row{
+    padding-top:10px;
+    padding-bottom:10px;
+    border-bottom:1px solid #ddd;
+    img{
+      width:14px;
+      height:14px;
+      margin-right:10px;
+    }
+  }
+
+}

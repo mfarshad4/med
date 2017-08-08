@@ -1,0 +1,40 @@
+<ion-content padding>
+  <ion-list>
+    <ion-row class="vertical-mid-container">
+      <img src="assets/images/logo.png" class="logo vertical-mid-inner">
+    </ion-row>
+
+    <ion-item>
+      <ion-icon item-left>
+        <img src="assets/images/call.png">
+      </ion-icon>
+      <!--<ion-label>Phone</ion-label>-->
+      <ion-input placeholder="Phone"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon item-left>
+        <img src="assets/images/lock.png">
+      </ion-icon>
+      <!--<ion-label>Password</ion-label>-->
+      <ion-input placeholder="Password"></ion-input>
+    </ion-item>
+
+    <ion-item class="vertical-mid-container btn-item">
+      <button ion-button full (click)="sign()" class="margent-background vertical-mid-inner round-button">Sign in</button>
+    </ion-item>
+
+    <h5 text-center (click)="forget()"><span>Forgot password?</span></h5>
+    <h5 text-center>Don't have an account? <span (click)="signup()" class="margent">Signup</span></h5>
+
+    <h4 text-center>Or Login with</h4>
+    <ion-row class="vertical-mid-container">
+      <div class="vertical-mid-inner social-row">
+        <img src="assets/images/facebook.png">
+        <img src="assets/images/twitter.png">
+        <img src="assets/images/google.png">
+        <img src="assets/images/mail.png">
+      </div>
+    </ion-row>
+  </ion-list>
+</ion-content>

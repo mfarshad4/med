@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button menuToggle class="st">
+        <img src="assets/images/menu.png">
+      </button>
+    </ion-buttons>
+    <ion-title>Checkout</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-row class="header-row">
+      <ion-col col-6>
+        ITEMS
+      </ion-col>
+      <ion-col col-3 text-center>
+        QUANTITY
+      </ion-col>
+      <ion-col col-3 text-center>
+        PRICE
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="t-row" *ngFor="let item of items;">
+      <ion-col col-6>
+        {{item.title}}
+      </ion-col>
+      <ion-col col-3 text-center>
+        {{item.amount}}
+      </ion-col>
+      <ion-col col-3 text-center>
+        ${{item.price}}
+      </ion-col>
+    </ion-row>
+  </ion-list>
+
+  <ion-list class="b-list">
+    <ion-row class="b-row">
+      <ion-col col-6>
+        Tips
+      </ion-col>
+      <ion-col col-3 text-center>
+        -
+      </ion-col>
+      <ion-col col-3 text-center>
+        $2.00
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="b-row">
+      <ion-col col-6>
+        Discounts
+      </ion-col>
+      <ion-col col-3 text-center>
+        -
+      </ion-col>
+      <ion-col col-3 text-center>
+        $3.00
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="b-row">
+      <ion-col col-6>
+        Coins Traded
+      </ion-col>
+      <ion-col col-3 text-center>
+        -
+      </ion-col>
+      <ion-col col-3 text-center>
+        89
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="bb-row">
+      <ion-col col-6>
+        Grand Total
+      </ion-col>
+      <ion-col col-3 text-center>
+        -
+      </ion-col>
+      <ion-col col-3 text-center>
+        <span>$55.17</span>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+
+  <ion-row class="r-row vertical-mid-container">
+    <button ion-button class="r-btn" (click)="go_pay()">Pay Now</button>
+  </ion-row>
+</ion-content>

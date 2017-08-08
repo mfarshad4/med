@@ -1,0 +1,47 @@
+<ion-content padding>
+  <div class="main-div">
+    <h4 text-center>Rate Now</h4>
+
+    <ion-row class="vertical-mid-container">
+      <div class="vertical-mid-inner">
+        <rating
+          readOnly="false"
+          max="5"
+          emptyStarIconName="star-outline"
+          halfStarIconName="star-half"
+          starIconName="star"
+          nullable="false"
+        > <!--use it when you need to do something when user clicks on a star. in case you only need to change ngModel property, this property can be ommited.-->
+        </rating>
+        <span>Customer Service</span>
+      </div>
+    </ion-row>
+
+    <ion-row class="vertical-mid-container">
+      <div class="vertical-mid-inner">
+        <rating
+          readOnly="false"
+          max="5"
+          emptyStarIconName="star-outline"
+          halfStarIconName="star-half"
+          starIconName="star"
+          nullable="false"
+        > <!--use it when you need to do something when user clicks on a star. in case you only need to change ngModel property, this property can be ommited.-->
+        </rating>
+        <span>Product Quality</span>
+      </div>
+    </ion-row>
+    <h5 text-center>Star Rating is required.</h5>
+
+    <ion-textarea placeholder="Write Comment"></ion-textarea>
+
+    <ion-row class="vertical-mid-container">
+        <button ion-button class="margent-background vertical-mid-inner" (click)="close()">Submit</button>
+    </ion-row>
+
+    <button ion-button class="close-btn" (click)="close()" icon-only>
+      <ion-icon name="ios-close"></ion-icon>
+    </button>
+  </div>
+
+</ion-content>

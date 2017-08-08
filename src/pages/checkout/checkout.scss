@@ -1,0 +1,109 @@
+page-checkout{
+  ion-toolbar{
+    .toolbar-background{
+      background-color: #2bc2bd!important;
+    }
+    button{
+      color:$white!important;
+    }
+
+    ion-buttons{
+      order:3!important;
+      width:40px!important;
+      button{
+        width:100%!important;
+        padding:0!important;
+        margin:0!important;
+        img{
+          width:20px;
+        }
+      }
+    }
+    .toolbar-title{
+      color:$white;
+    }
+  }
+
+  .scroll-content{
+    background: url(../assets/images/bg.png);
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+  }
+
+  ion-list{
+    .header-row{
+      background-color: $white;
+      padding-top:5px;
+      padding-bottom:5px;
+      padding-left:10px;
+      border-bottom:1px solid #e8e8e8;
+    }
+    .t-row{
+      //background-color: #f0f0f0;
+      padding-top:10px;
+      padding-bottom:10px;
+      padding-left:10px;
+      border-bottom:1px solid #ddd;
+      font-size:3.5vw;
+      font-family: "GOTHIC NORMAL";
+      ion-icon{
+        color:$dblack;
+      }
+      .op-div{
+        background-color: $bgreen;
+        padding:3px 5px;
+        ion-icon{
+          color:$white;
+        }
+      }
+      .in-div{
+        border:1px solid $bgreen;
+        width:50%;
+        ion-input{
+
+        }
+        input{
+          margin:0;
+          padding:3px;
+          width:100%;
+          text-align: center;
+          height: 16px;
+        }
+      }
+
+      .col-7{
+        font-size:5vw;
+      }
+      span{
+        font-size:4.4vw;
+      }
+    }
+  }
+
+  .b-list{
+    margin-left:10px;
+    margin-right:10px;
+    background-color: rgba(0,0,0,0.1);
+    font-size:4vw;
+    font-family: "GOTHIC NORMAL";
+    padding:10px;
+
+    .bb-row{
+      border-top:1px solid #aaa;
+    }
+
+    span{
+      color:$bgreen;
+    }
+  }
+
+  .r-row{
+    .r-btn{
+      background-color: $margent;
+      border-radius: 200px;
+      padding:5px 20px;
+      font-family: "GOTHIC NORMAL";
+    }
+  }
+}

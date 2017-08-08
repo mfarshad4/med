@@ -1,0 +1,111 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button menuToggle class="st">
+        <img src="assets/images/menu.png">
+      </button>
+    </ion-buttons>
+    <ion-title>Go Online</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-row class="tool-row">
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/bell.png" class="vertical-mid-inner">
+      <div class="mbadge">18</div>
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/cart.png" class="vertical-mid-inner">
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/cup.png" class="vertical-mid-inner">
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/heart.png" class="vertical-mid-inner">
+    </ion-col>
+
+    <ion-col class="vertical-mid-container">
+      <img src="assets/images/usd.png" class="vertical-mid-inner">
+    </ion-col>
+  </ion-row>
+
+  <ion-segment [(ngModel)]="sinfo">
+    <ion-segment-button value="a" class="first-segment">
+      Referals
+    </ion-segment-button>
+    <ion-segment-button value="b" class="last-segment">
+      Earnings
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="sinfo" padding>
+    <ion-list *ngSwitchCase="'a'" class="s-list">
+
+      <ion-item>
+        <h4>Get $100</h4>
+        <p>Pellentesque metus urna, laoreet non convallis quis, sollicitudin nec massa. Praesent nec ante lacus. </p>
+        <h5>
+          <button ion-button class="margent-background">Email</button>
+          <button ion-button class="green-background">Text</button>
+        </h5>
+        <ion-thumbnail item-right>
+          <img src="assets/images/go1.png">
+        </ion-thumbnail>
+      </ion-item>
+
+      <ion-item>
+        <h4>Get $100</h4>
+        <p>Pellentesque metus urna, laoreet non convallis quis, sollicitudin nec massa. Praesent nec ante lacus. </p>
+        <h5>
+          <button ion-button class="margent-background">Email</button>
+          <button ion-button class="green-background">Text</button>
+        </h5>
+        <ion-thumbnail item-right>
+          <img src="assets/images/go2.png">
+        </ion-thumbnail>
+      </ion-item>
+
+      <ion-item>
+        <h4>Get $100</h4>
+        <p>Pellentesque metus urna, laoreet non convallis quis, sollicitudin nec massa. Praesent nec ante lacus. </p>
+        <h5>
+          <button ion-button class="margent-background">Email</button>
+          <button ion-button class="green-background">Text</button>
+        </h5>
+        <ion-thumbnail item-right>
+          <img src="assets/images/go3.png">
+        </ion-thumbnail>
+      </ion-item>
+
+      <h4 text-center>Your Promo Code :</h4>
+
+      <ion-row>
+        <ion-input></ion-input>
+      </ion-row>
+
+      <p text-center><span>View Terms and Conditions</span></p>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'b'">
+      <ion-row class="vertical-mid-container no-border">
+        <img src="assets/images/girl.png" class="vertical-mid-inner profile">
+      </ion-row>
+
+      <ion-row class="vertical-mid-container no-border">
+        <img src="assets/images/usds2.png" class="vertical-mid-inner usd">
+      </ion-row>
+
+      <h5 text-center>Your Total Earnings :</h5>
+      <p text-center class="margent"><strong>10,230 coins</strong></p>
+
+
+    </ion-list>
+  </div>
+
+  <div class="upload-div vertical-mid-container">
+    <img src="assets/images/upload.png" class="vertical-mid-inner">
+  </div>
+</ion-content>

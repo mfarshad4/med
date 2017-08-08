@@ -1,0 +1,27 @@
+<ion-content padding>
+  <ion-list>
+    <ion-row class="vertical-mid-container">
+      <img src="assets/images/lock-logo.png" class="logo vertical-mid-inner">
+    </ion-row>
+    <h4 text-center>Select State</h4>
+    <p text-center>Select a state and we'll find the best service for you in your area</p>
+    <ion-item>
+      <ion-label>Select Your State</ion-label>
+      <ion-select>
+        <ion-option>
+          A
+        </ion-option>
+        <ion-option>
+          B
+        </ion-option>
+        <ion-option>
+          C
+        </ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item class="vertical-mid-container btn-item">
+      <button ion-button full (click)="next()" class="margent-background vertical-mid-inner round-button">Enter</button>
+    </ion-item>
+  </ion-list>
+</ion-content>
