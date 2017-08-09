@@ -18,6 +18,7 @@ import {FavoritePage} from "../pages/favorite/favorite";
 import {VotePage} from "../pages/vote/vote";
 import {GoOnlinePage} from "../pages/go-online/go-online";
 import {AdvertisePage} from "../pages/advertise/advertise";
+import {MenuPage} from "../pages/menu/menu";
 
 @Component({
   templateUrl: 'app.html'
@@ -55,6 +56,8 @@ export class MyApp {
     this.child_flag=index;
     if(index==1)this.header_title='Providers';
     if(index==6)this.header_title='Settings';
+    if(index==7)this.header_title='Driver Documents';
+    if(index==8)this.header_title='Earning & Fee\'s';
   }
 
   go_demand(){
@@ -85,6 +88,10 @@ export class MyApp {
     this.nav.setRoot(OnlinePage);
   }
 
+  go_confirm(){
+    this.nav.setRoot(ConfirmationPage);
+  }
+
   go_profile(){
     this.nav.setRoot(ProfilePage);
   }
@@ -98,14 +105,28 @@ export class MyApp {
   }
 
   go_vote(){
-    this.nav.setRoot(ConfirmationPage);
+    this.nav.setRoot(VotePage);
   }
 
   go_ad(){
     this.nav.setRoot(AdvertisePage);
   }
 
+  go_offline(){
+    this.nav.setRoot(OfflinePage);
+  }
+
   back(){
-    this.child_flag=0;
+    if(this.child_flag==8)this.child_flag=7;
+    else if(this.child_flag==7)this.child_flag=6;
+    else this.child_flag=0;
+
+    if(this.child_flag==1)this.header_title='Providers';
+    if(this.child_flag==6)this.header_title='Settings';
+    if(this.child_flag==7)this.header_title='Driver Documents';
+  }
+
+  go_menu(){
+    this.nav.setRoot(MenuPage);
   }
 }

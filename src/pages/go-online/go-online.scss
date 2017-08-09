@@ -6,6 +6,12 @@ page-go-online{
     background-size:     cover;
   }
 
+  ion-toolbar{
+    .end{
+      order:4!important;
+    }
+  }
+
   *{
     font-family: "GOTHIC NORMAL";
   }

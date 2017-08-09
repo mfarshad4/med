@@ -113,17 +113,34 @@ ion-toolbar{
       }
     }
   }
+
+  ion-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 0px 1px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
   .toolbar-title{
     color:$white;
     font-family: "GOTHIC NORMAL";
   }
+
+
+}
+
+.header-md::after{
+  background-image:none!important;
 }
 
 // upload icon
 .upload-div{
-  position: absolute;
-  top:8vh;
+  position: fixed;
+  top:18vh;
   right:0;
+  z-index: 1000;
 
   border-top-left-radius: 200px;
   border-bottom-left-radius: 200px;
@@ -142,13 +159,15 @@ ion-toolbar{
 .tool-row{
   background-color: $bgreen;
   margin-bottom:4vh;
+  height: 5vh;
   ion-col{
     border-right:1px solid #2bc2bd;
-    padding-top:5px!important;
-    padding-bottom:5px!important;
+    //padding-top:1vh!important;
+    //padding-bottom:1vh!important;
   }
   img{
-    width:16px;
+    height:2.5vh;
+    //width:16px;
   }
 
   .mbadge{
@@ -180,6 +199,16 @@ ion-toolbar{
     .toolbar-title{
       color: $bgreen!important;
       font-family: "GOTHIC NORMAL";
+    }
+
+    ion-title {
+      position: relative;
+      top: 0;
+      left: 0;
+      padding: 0px;
+      width: 100%;
+      height: 100%;
+      text-align: left;
     }
 
     ion-buttons{

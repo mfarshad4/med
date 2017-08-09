@@ -5,7 +5,7 @@
         <img src="assets/images/menu.png">
       </button>
     </ion-buttons>
-    <ion-title>Online</ion-title>
+    <ion-title>Vote Now</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content>
@@ -31,4 +31,46 @@
       <img src="assets/images/usd.png" class="vertical-mid-inner">
     </ion-col>
   </ion-row>
+
+  <ion-list>
+
+    <div class="top-div">
+
+    </div>
+
+    <div class="red-div margent-background">
+
+    </div>
+
+    <div class="green-div green-background">
+
+    </div>
+
+    <div class="center-div">
+      <img src="assets/images/vote.png">
+    </div>
+
+    <div class="vote-on" [ngStyle]="{ 'background-image': 'url(assets/images/vote-on.png)'}">
+      <p text-center>VOTE ON</p>
+      <h5>
+        <img src="assets/images/vote-facebook.png">
+        <img src="assets/images/vote-twitter.png">
+      </h5>
+    </div>
+
+  </ion-list>
+
+  <p text-center>This venue requires 100 votes in order to activate</p>
+
+  <h5 class="margent" text-nowrap>
+    VOTE NOW & TELL A FRIEND...
+  </h5>
+
+  <div class="bottom-div vertical-mid-container">
+    <span class="vertical-mid-inner">ADVERTISEMENT</span>
+  </div>
+
+  <div class="upload-div vertical-mid-container">
+    <img src="assets/images/upload.png" class="vertical-mid-inner">
+  </div>
 </ion-content>

@@ -1,3 +1,100 @@
 page-vote{
 
+  *{
+    font-family: "GOTHIC NORMAL";
+  }
+
+  .scroll-content{
+    background: url(../assets/images/bg.png);
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+  }
+
+  ion-list{
+    margin-bottom:40vw!important;
+    .top-div{
+      height: 20vh;
+    }
+    .red-div{
+      height:2vh;
+    }
+
+    .green-div{
+      margin-top:0.5vh;
+      height:10vh;
+    }
+
+    .center-div{
+      position: absolute;
+      width:80vw;
+      left:10vw;
+      top:calc(36vh - 40vw);
+    }
+
+    .vote-on{
+      position: absolute;
+      top:calc(36vh + 15vw);
+      width:30vw;
+      height:30vw;
+      left:10vw;
+      background-position: 50% 50%;
+      background-repeat:   no-repeat;
+      background-size:     cover;
+
+      p{
+        color: $white;
+        margin-top:7vw;
+        margin-bottom:0;
+      }
+
+
+      h5{
+        margin:0;
+        text-align: center;
+        padding-top:5px;
+        img{
+          width:9vw;
+
+        }
+      }
+    }
+  }
+
+  h5{
+    text-align: center;
+    font-size:4vw;
+  }
+
+
+  .bottom-div{
+    position: absolute;
+    bottom:10px;
+    left:10px;
+    width:calc(100% - 20px);
+    height:12vh;
+    background: url(../assets/images/adver.png);
+    span{
+      font-size:5vw;
+      font-family: "GOTHIC BOLD";
+    }
+  }
+
+
+  .upload-div{
+    position: absolute;
+    top:10vh;
+    right:0;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    background-color: $margent;
+    color: $white;
+
+    height:32px;
+    width:10vw;
+
+    img{
+      width:5vw;
+    }
+  }
 }
