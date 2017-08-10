@@ -110,5 +110,26 @@ page-product{
     }
   }
 
+  .s-div{
+    position: absolute;
+    top:4vh;
+    right:2vw;
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    background-color: $margent;
+    color:$white;
+    padding-top:2px;
+    h5{
+      margin:0!important;
+      font-size:2.6vw;
+      font-family: "GOTHIC NORMAL";
 
+    }
+  }
+
+  .upload-div {
+    top: 18vh;
+    width:40px;
+  }
 }

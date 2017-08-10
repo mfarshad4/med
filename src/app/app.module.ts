@@ -89,7 +89,11 @@ import {AdvertisePage} from "../pages/advertise/advertise";
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp,{
+      scrollPadding: false,
+      scrollAssist: true,
+      autoFocusAssist: false
+    }),
     Ionic2RatingModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyD7jRocUpBintu9hFwvKMbgX9V_YNJLzOg'

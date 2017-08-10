@@ -94,6 +94,7 @@
 
 // page header bar
 ion-toolbar{
+  min-height:30px!important;
   .toolbar-background{
     background-color: #2bc2bd!important;
   }
@@ -127,13 +128,17 @@ ion-toolbar{
     color:$white;
     font-family: "GOTHIC NORMAL";
   }
+}
 
-
+.tool-bar{
+  padding:0;
 }
 
 .header-md::after{
   background-image:none!important;
 }
+
+
 
 // upload icon
 .upload-div{
@@ -158,7 +163,7 @@ ion-toolbar{
 // page toolbar
 .tool-row{
   background-color: $bgreen;
-  margin-bottom:4vh;
+  margin-bottom:0vh;
   height: 5vh;
   ion-col{
     border-right:1px solid #2bc2bd;
@@ -246,3 +251,4 @@ ion-toolbar{
     font-family: "GOTHIC NORMAL";
   }
 }
+

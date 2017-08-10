@@ -9,7 +9,7 @@ page-online{
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
-
+    margin-top:70px;
   }
 
   ion-segment{
@@ -79,4 +79,7 @@ page-online{
     }
   }
 
+  .upload-div{
+    top:16vh;
+  }
 }

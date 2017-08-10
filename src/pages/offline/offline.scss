@@ -4,6 +4,7 @@ page-offline{
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
+    margin-top:70px!important;
   }
 
   h4,h5,p{
@@ -59,7 +60,7 @@ page-offline{
 
   .s-div{
     position: absolute;
-    top:8vh;
+    top:4vh;
     right:2vw;
     height:16px;
     width:28px;
@@ -69,7 +70,7 @@ page-offline{
   }
 
   .upload-div {
-    top: 12vh;
+    top: 21vh;
     width:40px;
   }
 }

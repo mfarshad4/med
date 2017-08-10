@@ -1,55 +1,5 @@
 page-storefronts{
-  ion-toolbar{
-    .toolbar-background{
-      background-color: #2bc2bd!important;
-    }
-    button{
-      color:$white!important;
-    }
 
-    ion-buttons{
-      order:3!important;
-      width:40px!important;
-      button{
-        width:100%!important;
-        padding:0!important;
-        margin:0!important;
-        img{
-          width:20px;
-        }
-      }
-    }
-    .toolbar-title{
-      color:$white;
-    }
-  }
-
-  .tool-row{
-    background-color: $bgreen;
-    margin-bottom:4vh;
-    ion-col{
-      border-right:1px solid #2bc2bd;
-      padding-top:5px!important;
-      padding-bottom:5px!important;
-    }
-    img{
-      width:16px;
-    }
-
-    .mbadge{
-      background-color: $margent;
-      color:$white;
-      font-size:10px;
-      width:15px;
-      height:15px;
-      border-radius: 50%;
-      text-align: center;
-      position: absolute;
-      top:0px;
-      right:30%;
-      padding-top:2px;
-    }
-  }
 
   ion-segment{
     width:60%;
@@ -84,6 +34,8 @@ page-storefronts{
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
+
+    margin-top:72px!important;
   }
 
   .bb-row{
@@ -96,7 +48,7 @@ page-storefronts{
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
-    height:24vh;
+    height:25vh;
     h5{
       color:$white;
       font-size:3vw;
@@ -161,22 +113,25 @@ page-storefronts{
   }
 
   .upload-div{
-    position: absolute;
-    top:8vh;
-    right:0;
-
-    border-top-left-radius: 200px;
-    border-bottom-left-radius: 200px;
-    background-color: $margent;
-    color: $white;
-
-    height:32px;
-    width:10vw;
-
-    img{
-      width:5vw;
-    }
+  //  position: absolute;
+    top:16vh;
+  //  right:0;
+  //
+  //  border-top-left-radius: 200px;
+  //  border-bottom-left-radius: 200px;
+  //  background-color: $margent;
+  //  color: $white;
+  //
+  //  height:32px;
+  //  width:10vw;
+  //
+  //  img{
+  //    width:5vw;
+  //  }
   }
 
+  ion-list{
+    margin-bottom:0!important;
+  }
 
 }

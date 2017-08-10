@@ -9,10 +9,11 @@ page-vote{
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
+    margin-top:70px!important;
   }
 
   ion-list{
-    margin-bottom:40vw!important;
+    margin-bottom:54vw!important;
     .top-div{
       height: 20vh;
     }
@@ -29,7 +30,7 @@ page-vote{
       position: absolute;
       width:80vw;
       left:10vw;
-      top:calc(36vh - 40vw);
+      top:calc(30vh - 40vw);
     }
 
     .vote-on{
@@ -82,19 +83,7 @@ page-vote{
 
 
   .upload-div{
-    position: absolute;
-    top:10vh;
-    right:0;
-    border-top-left-radius: 200px;
-    border-bottom-left-radius: 200px;
-    background-color: $margent;
-    color: $white;
+    top:16vh;
 
-    height:32px;
-    width:10vw;
-
-    img{
-      width:5vw;
-    }
   }
 }
